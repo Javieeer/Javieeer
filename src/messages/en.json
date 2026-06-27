@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "greeting": "Hi, I'm",
+    "title": "Systems Engineering Student",
+    "subtitle": "Building Real Products",
+    "description1": "Building software with focus on experience, ",
+    "description2": "quality and innovation.",
+    "slogan1": "Quality first.",
+    "slogan2": "Solutions always.",
+    "projects": "View Projects",
+    "resume": "Download Resume"
+  }
+}

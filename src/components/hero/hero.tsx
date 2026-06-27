@@ -1,34 +1,43 @@
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center text-center">
-      <div className="max-w-4xl px-6">
+    <section className="min-h-screen flex items-center justify-center pt-20">
+      <div className="max-w-5xl px-8 text-center">
 
-        <p className="text-lg text-zinc-400 mb-6">
+        <p className="text-zinc-500 text-lg mb-12">
           Hola, soy
         </p>
 
-        <h1 className="text-6xl md:text-8xl font-bold mb-8">
+        <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight mb-20">
           Javier Zapata
         </h1>
 
-        <h2 className="text-3xl md:text-5xl font-semibold mb-10">
-          Ingeniero de Sistemas
+        <h2 className="text-3xl md:text-5xl font-semibold leading-tight mb-16">
+          Estudiante de Ingeniería de Sistemas
           <br />
-          en Formación
+          Construyendo productos reales
         </h2>
 
-        <p className="text-xl md:text-2xl text-zinc-400 leading-relaxed mb-12">
+        <p className="max-w-2xl mx-auto text-zinc-400 text-xl md:text-2xl leading-relaxed mb-24">
           Construyendo software con enfoque
           <br />
           en experiencia, calidad e innovación.
         </p>
 
-        <div className="mb-16">
-          <p className="italic text-zinc-500">
-            Quality first. Solutions always.
-          </p>
-        </div>
+        <p className="text-zinc-500 italic text-lg mb-12">
+          La calidad primero.
+          <br />
+          Las soluciones siempre.
+        </p>
 
+        <div className="flex flex-col md:flex-row gap-4 justify-center mt-12">
+          <button className="px-8 py-3 bg-white text-black rounded-xl font-medium">
+            Ver proyectos
+          </button>
+
+          <button className="px-8 py-3 border border-zinc-700 rounded-xl font-medium">
+            Descargar CV
+          </button>
+        </div>
       </div>
     </section>
   );

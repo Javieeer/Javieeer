@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "greeting": "Hola, soy",
+    "title": "Estudiante de Ingeniería de Sistemas",
+    "subtitle": "Construyendo productos reales",
+    "description1": "Construyendo software con enfoque",
+    "description2": "en experiencia, calidad e innovación.",
+    "slogan1": "La calidad primero.",
+    "slogan2": "Las soluciones siempre.",
+    "projects": "Ver proyectos",
+    "resume": "Descargar CV"
+  }
+}
