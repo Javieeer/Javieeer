@@ -2,22 +2,22 @@ import FadeIn from "@/components/ui/fade-in";
 
 export default function About() {
   return (
-    <FadeIn>
+    <section
+      id="about"
+      className="min-h-screen flex items-center py-32"
+    >
+      <div className="
+        max-w-7xl
+        mx-auto
+        px-6 md:px-8
+        grid
+        gap-16
+        lg:grid-cols-[1.6fr_1fr]
+      ">
 
-      <section
-        id="about"
-        className="min-h-screen flex items-center py-32"
-      >
-        <div className="
-          max-w-7xl
-          mx-auto
-          px-6 md:px-8
-          grid
-          gap-16
-          lg:grid-cols-[1.6fr_1fr]
-        ">
+        {/* Texto */}
+        <FadeIn delay={0}>
 
-          {/* Texto */}
           <div>
             <p className="text-zinc-500 mb-6">
               Sobre mí
@@ -59,8 +59,10 @@ export default function About() {
 
             </div>
           </div>
+        </FadeIn>
 
-          {/* Tarjeta */}
+        {/* Tarjeta */}
+        <FadeIn delay={0.1}>
           <div className="flex items-center justify-center">
 
             <div
@@ -116,16 +118,12 @@ export default function About() {
                   <span className="px-4 py-2 rounded-full border border-zinc-800 text-zinc-300">
                     Escalabilidad
                   </span>
-
                 </div>
               </div>
-
             </div>
-
           </div>
-
-        </div>
-      </section>
-    </FadeIn>
+        </FadeIn>
+      </div>
+    </section>
   );
 }

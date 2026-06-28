@@ -47,14 +47,13 @@ export default function Stack() {
   ];
 
   return (
-    <FadeIn>
+    <section
+      id="stack"
+      className="min-h-screen py-32"
+    >
+      <div className="max-w-7xl mx-auto px-8">
 
-      <section
-        id="stack"
-        className="min-h-screen py-32"
-      >
-        <div className="max-w-7xl mx-auto px-8">
-
+        <FadeIn delay={0.1}>
           <p className="text-zinc-500 mb-6">
             Stack
           </p>
@@ -64,18 +63,19 @@ export default function Stack() {
             <br />
             construyo productos.
           </h2>
+        </FadeIn>
 
-          <div className="space-y-6">
+        <div className="space-y-6">
 
-            {sections.map((section) => (
-              <div key={section.title}>
-
+          {sections.map((section) => (
+            <div key={section.title}>
+              
+              <FadeIn delay={0.2}>
                 <h3 className="text-xl font-semibold mb-6">
                   {section.title}
                 </h3>
 
                 <div className="flex flex-wrap gap-4">
-
                   {section.technologies.map((tech) => (
                     <div
                       key={tech}
@@ -97,14 +97,13 @@ export default function Stack() {
                   ))}
 
                 </div>
-
-              </div>
-            ))}
-
-          </div>
+              </FadeIn>
+            </div>
+          ))}
 
         </div>
-      </section>
-    </FadeIn>
+
+      </div>
+    </section>
   );
 }
