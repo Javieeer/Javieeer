@@ -7,30 +7,32 @@ export default function Navbar() {
           {/* Logo */}
           <div>
             <h1 className="font-semibold text-lg">
-              Javier Zapata
+              <a href="#" className="hover:text-white transition-all duration-300">
+                Javier Zapata
+              </a>
             </h1>
           </div>
 
           {/* Navegación */}
           <nav className="hidden md:flex items-center gap-8 text-sm text-zinc-400">
 
-            <a href="#about" className="hover:text-white transition">
+            <a href="#about" className="hover:text-white transition-all duration-300">
               Sobre mí
             </a>
 
-            <a href="#stack" className="hover:text-white transition">
+            <a href="#stack" className="hover:text-white transition-all duration-300">
               Stack
             </a>
 
-            <a href="#projects" className="hover:text-white transition">
+            <a href="#projects" className="hover:text-white transition-all duration-300">
               Proyectos
             </a>
 
-            <a href="#certifications" className="hover:text-white transition">
+            <a href="#certifications" className="hover:text-white transition-all duration-300">
               Certificaciones
             </a>
 
-            <a href="#contact" className="hover:text-white transition">
+            <a href="#contact" className="hover:text-white transition-all duration-300">
               Contacto
             </a>
 

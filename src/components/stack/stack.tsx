@@ -1,3 +1,5 @@
+import FadeIn from "../ui/fade-in";
+
 export default function Stack() {
 
   const sections = [
@@ -45,58 +47,64 @@ export default function Stack() {
   ];
 
   return (
-    <section
-      id="stack"
-      className="min-h-screen py-32"
-    >
-      <div className="max-w-7xl mx-auto px-8">
+    <FadeIn>
 
-        <p className="text-zinc-500 mb-6">
-          Stack
-        </p>
+      <section
+        id="stack"
+        className="min-h-screen py-32"
+      >
+        <div className="max-w-7xl mx-auto px-8">
 
-        <h2 className="text-4xl md:text-5xl font-bold mb-20">
-          Tecnologías con las que
-          <br />
-          construyo productos.
-        </h2>
+          <p className="text-zinc-500 mb-6">
+            Stack
+          </p>
 
-        <div className="space-y-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-20">
+            Tecnologías con las que
+            <br />
+            construyo productos.
+          </h2>
 
-          {sections.map((section) => (
-            <div key={section.title}>
+          <div className="space-y-6">
 
-              <h3 className="text-xl font-semibold mb-6">
-                {section.title}
-              </h3>
+            {sections.map((section) => (
+              <div key={section.title}>
 
-              <div className="flex flex-wrap gap-4">
+                <h3 className="text-xl font-semibold mb-6">
+                  {section.title}
+                </h3>
 
-                {section.technologies.map((tech) => (
-                  <div
-                    key={tech}
-                    className="
-                        px-6 py-3
-                        rounded-2xl
-                        border border-zinc-800
-                        bg-zinc-950
-                        text-zinc-300
-                        hover:border-zinc-700
-                        transition
-                    "
-                  >
-                    {tech}
-                  </div>
-                ))}
+                <div className="flex flex-wrap gap-4">
+
+                  {section.technologies.map((tech) => (
+                    <div
+                      key={tech}
+                      className="
+                          px-6 py-3
+                          rounded-2xl
+                          border border-zinc-800
+                          bg-zinc-950
+                          text-zinc-300
+                          transition-all
+                          duration-300
+                          hover:border-zinc-700
+                          hover:-translate-y-1
+                          hover:bg-zinc-900
+                      "
+                    >
+                      {tech}
+                    </div>
+                  ))}
+
+                </div>
 
               </div>
+            ))}
 
-            </div>
-          ))}
+          </div>
 
         </div>
-
-      </div>
-    </section>
+      </section>
+    </FadeIn>
   );
 }
