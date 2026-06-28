@@ -4,7 +4,14 @@ export default function About() {
       id="about"
       className="min-h-screen flex items-center py-32"
     >
-      <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-[1.6fr_1fr] gap-20">
+      <div className="
+        max-w-7xl
+        mx-auto
+        px-6 md:px-8
+        grid
+        gap-16
+        lg:grid-cols-[1.6fr_1fr]
+      ">
 
         {/* Texto */}
         <div>
@@ -52,7 +59,7 @@ export default function About() {
         {/* Tarjeta */}
         <div className="flex items-center justify-center">
 
-          <div className="w-full max-w-md p-10 border border-zinc-800 rounded-3xl bg-zinc-950">
+          <div className="w-full max-w-md mx-auto p-10 border border-zinc-800 rounded-3xl bg-zinc-950">
 
             <h3 className="text-2xl font-semibold mb-2">
               Javier Zapata

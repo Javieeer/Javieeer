@@ -1,17 +1,17 @@
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center pt-20">
-      <div className="max-w-5xl px-8 text-center">
+      <div className="max-w-5xl mx-auto px-6 md:px-8 text-center">
 
         <p className="text-zinc-500 text-lg mb-12">
           Hola, soy
         </p>
 
-        <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight mb-20">
+        <h1 className="text-5xl md:text-8xl font-bold tracking-tight mb-20">
           Javier Zapata
         </h1>
 
-        <h2 className="text-3xl md:text-5xl font-semibold leading-tight mb-16">
+        <h2 className="text-2xl md:text-5xl font-semibold leading-tight mb-16">
           Estudiante de Ingeniería de Sistemas
           <br />
           Construyendo productos reales
